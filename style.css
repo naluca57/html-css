@@ -11,7 +11,7 @@ body{
 }
 
 p {
-    font-size: 1.1em; 
+    font-size: 1.3em; 
 }
 
 a {
@@ -23,7 +23,7 @@ a:hover{
     text-decoration: underline;
 }
 
-a[class="bg-gradient"]:hover{
+a[class="cta"]:hover{
     background: linear-gradient(#696484, #8788BA);
     text-decoration: none;
 }
@@ -31,6 +31,7 @@ a[class="bg-gradient"]:hover{
 h1{
     font-size: 3.5em;
     font-family: 'Montserrat', sans-serif;
+    color: #A5B4FC;
 }
 
 em{
@@ -44,6 +45,7 @@ em{
     font-family: 'Montserrat', sans-serif;
     border-radius: 50px;
     padding: 12px 16px;
+    width: 225px;
 }
 
 .border-bottom-right{
@@ -66,6 +68,7 @@ header,
 footer{
     background-color: white;
     padding: 20px 50px 20px 50px;
+
     /* padding: 20px 50px; --> propriété raccourci, il comprend que les valeurs se répètent en haut et en bas ; et à droite et à gauche */
 
 
@@ -73,6 +76,41 @@ footer{
     background-attachment: fixed;
     height: 400px; 
     ----> pour mettre une image de fond en bg-att: fixed*/
+}
+
+nav, 
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .description-main{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+}
+
+.description-main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 20px;
+    width: 40%;
+}
+
+nav a{
+    margin-left: 30px;
+}
+
+footer a{
+    margin-left: 15px;
+}
+
+.description-main img{
+    padding-left: 80px;
 }
 
 .a-propos-centre{
@@ -87,6 +125,81 @@ footer{
 .border-bottom-right ul {
     margin-top: 10px;
   }
+
+.mon-dernier-projet{
+    background-color: white;
+}
+
+.mon-dernier-projet h2{
+text-align: center;
+margin-bottom: 80px;
+color: #1F2039;
+font-size: 35px;
+}
+
+.mon-dernier-projet div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 16px;
+}
+
+.mon-dernier-projet .mon-dernier-projet-cta{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.grid-voyages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    gap: 15px;
+}
+
+.paysage1{
+    grid-column: 1 / 4;
+}
+
+.paysage5{
+    grid-column: 1 / 4;
+}
+
+.paysage9{
+    grid-column: 1 / 4;
+}
+
+.grid-voyages img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-portraits{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+}
+
+.grid-portraits img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-section-photos{
+    background-color: white;
+    color: black;
+}
+
+.portfolio-section-photos h2{
+    padding: 50px 0;
+}
+
+main .portfolio-section-photos{
+    padding: 0 80px 50px 80px;
+}
 
 /* .bg-white a {
     color: #242424;
